@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía: Análisis Integral de KFC en Uruguay</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 400px;
+            max-height: 50vh;
+        }
+        .radar-chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 400px;
+            max-height: 50vh;
+        }
+        @media (max-width: 768px) {
+            .chart-container {
+                height: 350px;
+                max-height: 60vh;
+            }
+             .radar-chart-container {
+                height: 350px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-[#FF33A1] text-white p-6 shadow-lg">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-black tracking-tight">Análisis Integral: Situación de KFC en Uruguay</h1>
+            <p class="mt-2 text-lg">Informe Ejecutivo tras un Mes y Medio de Operaciones | 28 de Agosto de 2025</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-8">
+
+        <section id="contexto" class="bg-white rounded-lg shadow-md p-6 mb-8 text-center">
+            <h2 class="text-3xl font-bold text-[#3357FF] mb-4">Un Hito Histórico: La Larga Espera de Uruguay</h2>
+            <p class="text-lg max-w-3xl mx-auto">La llegada de KFC no es un lanzamiento común. Marcó el fin de una era, posicionando a Uruguay como el último bastión de América Latina en recibir a la icónica marca, generando una expectativa sin precedentes.</p>
+            <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <p class="text-6xl font-black text-[#3357FF]">70 Años</p>
+                    <p class="mt-2 font-bold text-xl">De espera desde la fundación de KFC en 1952.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <p class="text-6xl font-black text-[#3357FF]">#1</p>
+                    <p class="mt-2 font-bold text-xl">Último país de América Latina en recibir la franquicia.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="estrategia" class="bg-white rounded-lg shadow-md p-6 mb-8 text-center">
+            <h2 class="text-3xl font-bold text-[#A133FF] mb-4">Una Estrategia de Entrada Ambiciosa</h2>
+             <p class="text-lg max-w-3xl mx-auto mb-6">El desembarco se apoyó en una fuerte inversión y un plan de crecimiento agresivo, demostrando un alto compromiso con el mercado uruguayo.</p>
+            <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-purple-50 p-4 rounded-lg border-l-4 border-[#A133FF]">
+                    <p class="text-4xl font-black text-[#A133FF]">+12M USD</p>
+                    <p class="mt-2 font-bold">Inversión total proyectada en 5 años.</p>
+                </div>
+                <div class="bg-purple-50 p-4 rounded-lg border-l-4 border-[#A133FF]">
+                    <p class="text-4xl font-black text-[#A133FF]">25 Locales</p>
+                    <p class="mt-2 font-bold">Meta de expansión a nivel nacional en 5 años.</p>
+                </div>
+                <div class="bg-purple-50 p-4 rounded-lg border-l-4 border-[#A133FF]">
+                    <p class="text-4xl font-black text-[#A133FF]">+1,200</p>
+                    <p class="mt-2 font-bold">Puestos de trabajo que se crearán.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="resumen" class="bg-white rounded-lg shadow-md p-6 mb-8 text-center">
+            <h2 class="text-3xl font-bold text-[#FF5733] mb-4">Diagnóstico Actual: Una Posición Insostenible</h2>
+            <p class="text-lg max-w-3xl mx-auto">A pesar de la estrategia, la ejecución ha resultado en una recepción abrumadoramente negativa, posicionándonos en el <strong class="font-black">último lugar competitivo</strong> del mercado. Es imperativo tomar acciones correctivas inmediatas.</p>
+            <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="text-5xl font-black text-[#FF5733]">400%</p>
+                    <p class="mt-2 font-bold">Más Lentos que la Competencia</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="text-5xl font-black text-[#FF5733]">+218%</p>
+                    <p class="mt-2 font-bold">Más Caros que Rivales Directos</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="text-5xl font-black text-[#FF5733]">1.72/10</p>
+                    <p class="mt-2 font-bold">Score Competitivo (Último Lugar)</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="diagnostico-consumidor" class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h2 class="text-3xl font-bold text-center text-[#A133FF] mb-4">Diagnóstico del Consumidor: Decepción en Puntos Clave</h2>
+            <p class="text-lg text-center max-w-3xl mx-auto mb-6">El análisis de la percepción del consumidor revela fallas estructurales. La siguiente gráfica muestra el "Score Crítico", donde una barra más larga indica una peor valoración por parte del cliente.</p>
+            <div class="chart-container">
+                <canvas id="consumerDiagnosisChart"></canvas>
+            </div>
+        </section>
+
+        <section id="competencia" class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h2 class="text-3xl font-bold text-center text-[#3357FF] mb-4">Análisis Competitivo: Últimos en un Mercado Saturado</h2>
+            <p class="text-lg text-center max-w-3xl mx-auto mb-6">Nuestra posición es de extrema debilidad. Ocupamos el último lugar en el ranking de competitividad del sector de comida rápida en Uruguay.</p>
+            <div class="chart-container h-[450px] md:h-[500px] max-h-[60vh]">
+                <canvas id="competitivenessChart"></canvas>
+            </div>
+        </section>
+
+        <section id="radar-competitivo" class="bg-white rounded-lg shadow-md p-6 mb-8">
+             <h2 class="text-3xl font-bold text-center text-[#FFC300] mb-4">Comparativa Visual de Desempeño</h2>
+             <p class="text-lg text-center max-w-3xl mx-auto mb-6">El gráfico de radar ilustra la enorme brecha entre el desempeño de KFC y el promedio de sus competidores en áreas clave. Un valor más alto en el exterior del gráfico representa un peor desempeño (mayor criticidad).</p>
+             <div class="radar-chart-container">
+                <canvas id="radarChart"></canvas>
+            </div>
+        </section>
+
+        <section id="brechas" class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h2 class="text-3xl font-bold text-center text-[#FF5733] mb-6">Las 3 Brechas que Definen Nuestro Fracaso Inicial</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="border-4 border-[#FF5733] p-6 rounded-xl bg-red-50">
+                    <h3 class="text-2xl font-bold mb-4">💲 Precio Combo Básico</h3>
+                    <p class="text-6xl font-black text-[#FF5733]">+96%</p>
+                    <p class="mt-4 text-lg">Casi el doble de caro que el líder del mercado, Burger King (US$ 13.26 vs US$ 6.74).</p>
+                </div>
+                <div class="border-4 border-[#FF5733] p-6 rounded-xl bg-red-50">
+                    <h3 class="text-2xl font-bold mb-4">⏳ Tiempo de Espera</h3>
+                    <p class="text-6xl font-black text-[#FF5733]">+275%</p>
+                    <p class="mt-4 text-lg">Una espera de 45 minutos frente a los 12 minutos del competidor más eficiente.</p>
+                </div>
+                <div class="border-4 border-[#FF5733] p-6 rounded-xl bg-red-50">
+                    <h3 class="text-2xl font-bold mb-4">📍 Cobertura (Locales)</h3>
+                    <p class="text-6xl font-black text-[#FF5733]">-94%</p>
+                    <p class="mt-4 text-lg">Un solo local contra los 18 del competidor directo, limitando drásticamente el acceso.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="swot" class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h2 class="text-3xl font-bold text-center text-[#33FF57] mb-6">Análisis FODA: Fortalezas vs. Desafíos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-green-50 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold text-green-700 mb-4">✅ Fortalezas de Entrada</h3>
+                    <ul class="space-y-3 text-lg">
+                        <li class="flex items-start"><span class="text-green-700 mr-2">✔</span><span><strong>Producto Diferenciado:</strong> Oferta única de pollo frito frente a hamburguesas.</span></li>
+                        <li class="flex items-start"><span class="text-green-700 mr-2">✔</span><span><strong>Equipo Experimentado:</strong> Liderazgo con éxito probado en el mercado argentino.</span></li>
+                        <li class="flex items-start"><span class="text-green-700 mr-2">✔</span><span><strong>Cadena de Suministro Local:</strong> Más del 80% de proveedores uruguayos.</span></li>
+                        <li class="flex items-start"><span class="text-green-700 mr-2">✔</span><span><strong>Alta Expectativa:</strong> Reconocimiento de marca preexistente y factor novedad.</span></li>
+                    </ul>
+                </div>
+                <div class="bg-red-50 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold text-red-700 mb-4">❌ Desafíos Críticos</h3>
+                    <ul class="space-y-3 text-lg">
+                        <li class="flex items-start"><span class="text-red-700 mr-2">✖</span><span><strong>Sensibilidad al Precio:</strong> El consumidor uruguayo es consciente del precio y busca valor.</span></li>
+                        <li class="flex items-start"><span class="text-red-700 mr-2">✖</span><span><strong>Competencia Establecida:</strong> Mercado dominado por gigantes con décadas de presencia.</span></li>
+                        <li class="flex items-start"><span class="text-red-700 mr-2">✖</span><span><strong>Cultura Carnívora:</strong> El pollo no es la proteína principal en el "país de las vacas".</span></li>
+                        <li class="flex items-start"><span class="text-red-700 mr-2">✖</span><span><strong>Costos Operativos Altos:</strong> El mercado uruguayo es caro, presionando los márgenes.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="plan-accion" class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-3xl font-bold text-center text-[#33FF57] mb-6">Plan de Acción Urgente: 4 Pilares para la Supervivencia</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-green-50 border-l-8 border-[#33FF57] p-6 rounded-lg">
+                    <p class="text-2xl font-black text-[#33FF57]">1</p>
+                    <h3 class="text-xl font-bold mt-2">Reestructuración Radical de Precios</h3>
+                    <p class="mt-3"><strong>Acción:</strong> Reducir precios de entrada en un 49% para competir con las promociones de Burger King.</p>
+                </div>
+                <div class="bg-green-50 border-l-8 border-[#33FF57] p-6 rounded-lg">
+                    <p class="text-2xl font-black text-[#33FF57]">2</p>
+                    <h3 class="text-xl font-bold mt-2">Optimización Operacional Urgente</h3>
+                    <p class="mt-3"><strong>Acción:</strong> Reducir tiempos de espera en un 75% (objetivo: 12 min. máx.).</p>
+                </div>
+                <div class="bg-green-50 border-l-8 border-[#33FF57] p-6 rounded-lg">
+                    <p class="text-2xl font-black text-[#33FF57]">3</p>
+                    <h3 class="text-xl font-bold mt-2">Expansión y Accesibilidad Acelerada</h3>
+                    <p class="mt-3"><strong>Acción:</strong> Asegurar presencia inmediata en PedidosYa y Rappi y acelerar aperturas.</p>
+                </div>
+                <div class="bg-green-50 border-l-8 border-[#33FF57] p-6 rounded-lg">
+                    <p class="text-2xl font-black text-[#33FF57]">4</p>
+                    <h3 class="text-xl font-bold mt-2">Adaptación y Ampliación del Menú</h3>
+                    <p class="mt-3"><strong>Acción:</strong> Introducir productos icónicos globales (puré, piezas con hueso).</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-[#FF33A1] text-white p-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 KFC Uruguay - Análisis Interno Confidencial</p>
+        </div>
+    </footer>
+
+    <script>
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+                return label.join(' ');
+            }
+            return label;
+        };
+
+        const consumerData = {
+            labels: ['Tiempos Espera', 'Precios', 'Exp. General', 'Calidad Prod.', 'Menu/Variedad', 'Disponib/Acceso', 'vs Competencia', 'Serv. Cliente'],
+            datasets: [{
+                label: 'Score Crítico (Mayor es Peor)',
+                data: [8.1, 6.8, 5.2, 4.9, 4.5, 4.2, 3.3, 2.7],
+                backgroundColor: [
+                    '#FF5733', '#FF5733',
+                    '#FFC300', '#FFC300', '#FFC300',
+                    '#33FF57', '#33FF57', '#33FF57'
+                ],
+                borderWidth: 0
+            }]
+        };
+
+        new Chart(document.getElementById('consumerDiagnosisChart'), {
+            type: 'bar',
+            data: consumerData,
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: { x: { beginAtZero: true, title: { display: true, text: 'Nivel de Criticidad (0-10)' } } },
+                plugins: { legend: { display: false }, tooltip: { callbacks: { title: tooltipTitleCallback } } }
+            }
+        });
+
+        const competitivenessData = {
+            labels: ['Burger King', 'Subway', 'McDonald\'s', 'Mostaza', 'La Pasiva', 'Pizza Hut', 'KFC'],
+            datasets: [{
+                label: 'Score de Competitividad',
+                data: [7.10, 7.08, 6.47, 6.33, 6.03, 5.95, 1.72],
+                backgroundColor: ['#3357FF', '#3357FF', '#3357FF', '#3357FF', '#3357FF', '#3357FF', '#FF5733'],
+                borderWidth: 0
+            }]
+        };
+
+        new Chart(document.getElementById('competitivenessChart'), {
+            type: 'bar',
+            data: competitivenessData,
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: { x: { beginAtZero: true, title: { display: true, text: 'Puntuación de Competitividad (0-10)' } } },
+                plugins: { legend: { display: false }, tooltip: { callbacks: { title: tooltipTitleCallback } } }
+            }
+        });
+
+        const radarData = {
+            labels: ['Precio', 'Tiempo Espera', 'Cobertura', 'Calidad Percibida', 'Variedad Menú'],
+            datasets: [
+                {
+                    label: 'KFC (Criticidad)',
+                    data: [8, 9, 9, 5, 6],
+                    fill: true,
+                    backgroundColor: 'rgba(255, 87, 51, 0.2)',
+                    borderColor: '#FF5733',
+                    pointBackgroundColor: '#FF5733',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: '#FF5733'
+                },
+                {
+                    label: 'Promedio Competidores (Criticidad)',
+                    data: [4, 3, 4, 4, 4],
+                    fill: true,
+                    backgroundColor: 'rgba(51, 87, 255, 0.2)',
+                    borderColor: '#3357FF',
+                    pointBackgroundColor: '#3357FF',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: '#3357FF'
+                }
+            ]
+        };
+
+        new Chart(document.getElementById('radarChart'), {
+            type: 'radar',
+            data: radarData,
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                elements: { line: { tension: 0.1 } },
+                scales: {
+                    r: {
+                        angleLines: { display: false },
+                        suggestedMin: 0,
+                        suggestedMax: 10,
+                        pointLabels: { font: { size: 14 } }
+                    }
+                },
+                plugins: { tooltip: { callbacks: { title: tooltipTitleCallback } } }
+            }
+        });
+    </script>
+</body>
+</html>
